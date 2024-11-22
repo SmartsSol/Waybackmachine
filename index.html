@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre los platos típicos del Ecuador organizados por categorías: desayunos, almuerzos, meriendas y postres.">
+    <title>Platos Típicos del Ecuador</title>
+    <link rel="stylesheet" href="estilos.css">
+<style type="text/css">
+/* Configuración general */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #004643, #0f766e);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Navegación */
+nav {
+    background: #abd1c6;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: #004643;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #0f766e;
+    text-decoration: underline;
+}
+
+/* Contenido principal */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 40px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+section h2 {
+    color: #004643;
+    font-size: 2rem;
+    padding: 15px 20px;
+    margin: 0;
+    background: #abd1c6;
+    border-bottom: 2px solid #004643;
+}
+
+.plato {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    gap: 20px;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 20px;
+}
+
+.plato:last-child {
+    border-bottom: none;
+}
+
+.plato img {
+    flex: 1;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.plato-info {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px;
+}
+
+.plato-info h3 {
+    color: #0f766e;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.plato-info p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px 20px;
+    background: #abd1c6;
+    color: #004643;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+    color: #004643;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #0f766e;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    nav a {
+        margin: 0 10px;
+    }
+
+    .plato {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .plato img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .plato-info {
+        margin-top: 15px;
+    }
+}
+
+</style>
+<script>
+// Escribir aqui el código Javascript
+</script>
+</head>
+<body>
+    <header>
+        <div style="display: flex; align-items: center; justify-content: center; gap: 20px;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUKH7_foTcFi884prLBNRztJcK6wTJ3Xt6KQ&amp;s" alt="Escudo Institucional" style="max-width: 80px; max-height: 80px; border-radius: 50%; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+            <div>
+                <h1>Platos Típicos del Ecuador</h1>
+                <p>Explora la riqueza gastronómica ecuatoriana organizada por categorías.</p>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <a href="#desayunos">Desayunos</a>
+        <a href="#almuerzos">Almuerzos</a>
+        <a href="#meriendas">Meriendas</a>
+        <a href="#postres">Postres</a>
+    </nav>
+    <main>
+        
+        <section id="desayunos">
+            <h2>Desayunos</h2>
+            <article class="plato">
+                <img src="https://i.pinimg.com/1200x/5f/dc/40/5fdc40bdc4594a1c9f02994168bd644f.jpg" alt="Bolón de verde">
+                <div class="plato-info">
+                    <h3>Bolón de Verde</h3>
+                    <p>El bolón de verde es un desayuno popular elaborado con plátano verde, queso y chicharrón. Se sirve acompañado de café o jugo de frutas.</p>
+                </div>
+            </article>
+            <article class="plato">
+                <img src="https://www.recetasnestle.com.ec/sites/default/files/srh_recipes/60aeb6fc8f51e27174b537950669282b.jpg" alt="Tigrillo">
+                <div class="plato-info">
+                    <h3>Tigrillo</h3>
+                    <p>El tigrillo combina plátano verde majado, huevo y queso, formando un plato delicioso y energético perfecto para comenzar el día.</p>
+                </div>
+            </article>
+        </section>
+
+       
+        <section id="almuerzos">
+            <h2>Almuerzos</h2>
+            <article class="plato">
+                <img src="https://comedera.com/wp-content/uploads/sites/9/2022/08/Encebollado-ecuatoriano-shutterstock_270241418.jpg" alt="Encebollado">
+                <div class="plato-info">
+                    <h3>Encebollado</h3>
+                    <p>El encebollado es una sopa de pescado típica de la costa ecuatoriana, servida con yuca, cebolla encurtida y limón. Es ideal para combatir la resaca.</p>
+                </div>
+            </article>
+            <article class="plato">
+                <img src="https://www.recetasnestle.com.ec/sites/default/files/srh_recipes/cd4a9c6f48f4b516841d8710f035ef4c.jpg" alt="Guatita">
+                <div class="plato-info">
+                    <h3>Guatita</h3>
+                    <p>La guatita es un guiso de mondongo acompañado de papas y una salsa de maní, servido con arroz blanco y aguacate.</p>
+                </div>
+            </article>
+        </section>
+
+        
+        <section id="meriendas">
+            <h2>Meriendas</h2>
+            <article class="plato">
+                <img src="https://imag.bonviveur.com/humitas-ecuatorianas-portada.jpg" alt="Humitas">
+                <div class="plato-info">
+                    <h3>Humitas</h3>
+                    <p>Las humitas son una preparación hecha con choclo tierno, queso y masa, cocinadas al vapor en hojas de maíz. Se disfrutan tanto dulces como saladas.</p>
+                </div>
+            </article>
+            <article class="plato">
+                <img src="https://yayaya.com.ec/wp-content/uploads/2021/07/empanadas_de_viento.jpg" alt="Empanadas de viento">
+                <div class="plato-info">
+                    <h3>Empanadas de Viento</h3>
+                    <p>Empanadas rellenas de queso, fritas y espolvoreadas con azúcar, ideales para acompañar un café por la tarde.</p>
+                </div>
+            </article>
+        </section>
+
+      
+        <section id="postres">
+            <h2>Postres</h2>
+            <article class="plato">
+                <img src= "https://www.tastingtable.com/img/gallery/helado-de-paila-the-ecuadorian-ice-cream-you-should-know-about/what-is-helado-de-paila-1659369877.jpg"alt="Helado de paila">
+                <div class="plato-info">
+                    <h3>Helado de Paila</h3>
+                    <p>Tradicional postre ecuatoriano preparado con jugos de frutas frescas, hielo y azúcar, batido en una paila de bronce.</p>
+                </div>
+            </article>
+            <article class="plato">
+                <img src="https://yayaya.com.ec/wp-content/uploads/2021/10/Pristinos.jpg" alt="Pristiños">
+                <div class="plato-info">
+                    <h3>Pristiños</h3>
+                    <p>Postre típico de la época navideña, hecho con masa frita en forma de aro y servido con miel de panela.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>© Oswaldo's page. Todos los derechos reservados.</p>
+        <p>Visita más sobre la gastronomía ecuatoriana en <a href="https://blog.howlanders.com/ecuador/gastronomia-en-ecuador/">nuestro sitio web</a>.</p>
+    </footer>
+
+
+
+</body></html>
